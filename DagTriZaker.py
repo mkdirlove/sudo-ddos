@@ -523,7 +523,7 @@ class sender(threading.Thread):
             try:
                 self.request()               
             except:
-                sys.stdout.write(Fore.RED+'[Zasuke] SSL-Connect: '+Fore.BLUE+'fail or timeout !\n')
+                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.BLUE+'CHẾT CON MẸ MÀY ĐI WEBSITE LỎ !!!  !\n')
                 sys.exit(0)
 
         sys.exit(0)
