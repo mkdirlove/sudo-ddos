@@ -523,7 +523,7 @@ class sender(threading.Thread):
             try:
                 self.request()               
             except:
-                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.BLUE+'CHẾT CON MẸ MÀY ĐI WEBSITE LỎ !!!  !\n')
+                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.CYAN+'%s\r\n' % self.url) 
                 sys.exit(0)
 
         sys.exit(0)
