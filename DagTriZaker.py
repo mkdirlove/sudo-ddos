@@ -512,7 +512,7 @@ class sender(threading.Thread):
 
         req = urllib.request.Request(self.url, data, self.headers, self.accept)
         urllib.request.urlopen(req)
-        print(Fore.GREEN+'[DagTriZaker] Connected Website: '+Fore.CYAN+'%s\r\n' % self.url)  
+        print(Fore.GREEN+'[DagTriZaker] Connected Website: '+Fore.CYAN+'HUHU WEBSITE NÀY TRÂU QUÁ IB ĐẠI CA TRÍ MUA TOOL VIP HƠN DẬP THẰNG NÀY THOAIII=))\n')  
         
              
         
@@ -523,7 +523,7 @@ class sender(threading.Thread):
             try:
                 self.request()               
             except:
-                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.CYAN+'%s\r\n' % self.url) 
+                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.BLUE+'ĐỊT CỤ WEBSITE LỎ VÃI LỒN DOWN DOWN DOWN CHẾT MẸ ĐI !!\n') 
                 sys.exit(0)
 
         sys.exit(0)
