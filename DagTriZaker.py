@@ -512,7 +512,7 @@ class sender(threading.Thread):
 
         req = urllib.request.Request(self.url, data, self.headers, self.accept)
         urllib.request.urlopen(req)
-        print(Fore.GREEN+'[DagTriZaker] Connected Website: '+Fore.CYAN+'HUHU WEBSITE NÀY TRÂU QUÁ IB ĐẠI CA TRÍ MUA TOOL VIP HƠN DẬP THẰNG NÀY THOAIII=))\n')  
+        print(Fore.GREEN+'[DagTriZaker] Connected Website: '+Fore.CYAN+'%s\r\n' % self.url)  
         
              
         
