@@ -552,36 +552,34 @@ class MainLoop:
 
     def home(self): 
         logo = """
-╔══════════════════════════════════════════════════════════════╗
-                   | KAISER DDOS V2 X KAISER PROJECT |
+\033[1;36m╔══════════════════════════════════════════════════════════════╗
+               \033[1;36m| KAISER DDOS V2 X KAISER PROJECT |
+                   
   ▒█░▄▀ ░█▀▀█ ▀█▀ ▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░
   ▒█▀▄░ ▒█▄▄█ ▒█░ ░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀   ░▒█░░ ▒█░░▒█ ▒█░░▒█ ▒█░
   ▒█░▒█ ▒█░▒█ ▄█▄ ▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█   ░▒█░░ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▄█
-               | Văn Huy DZAI Cuto Nhất nhá mày tuổi Lồnn |
-╚══════════════════════════════════════════════════════════════╝
-                                                         HUYKAISER PROCODER DDoS v2
+             
+         \033[1;36m | Văn Huy DZAI Cuto Nhất nhá mày tuổi Lồnn |
+\033[1;36m╚══════════════════════════════════════════════════════════════╝
+                               HUYKAISER PROCODER DDOS V1
                                                            
------------------------------------------------------------------------------------------ 
+---------------------------------------------------------------------------------------
  Cảm ơn bạn đã ủng hộ HuyKaiser Dzai nhiều nha <3 love u very much
-                                                                                                  
-                                                                                                  
-                                                                                             
-
-                                                                            
+                                                                                          
 """      
         getproxy()
         CRED2 = '\33[91m'
-        CBLUE = '\033[1;36m'
+        CBLUE = '\33[36m'
         print(Style.RESET_ALL)
         try:
 			#url = sys.argv[1]
             os.system('cls' if os.name == 'nt' else 'clear')
             print(CRED2 + logo + CBLUE)
-            url = str(input(f"{Fore.RED}[HuyKaiserDZ]   Nhập Url/Target: {Fore.RESET}"))
+            url = str(input(f"{Fore.BLUE}[HuyKaiserDZ]   Nhập Url/Target: {Fore.RESET}"))
         except:
             os.system('cls' if os.name == 'nt' else 'clear')
 			#url = sys.argv[1]
-            url = str(input(f"{Fore.RED}│   Nhập Url/Target: {Fore.RESET}"))
+            url = str(input(f"{Fore.RED}│  Nhập Url/Target: {Fore.RESET}"))
         else:
             try:
                 file_proxy = str('proxy.txt')
@@ -592,7 +590,7 @@ class MainLoop:
             else:
 				#num_threads = sys.argv[2]
                 #num_threads = int(input("threads: "))
-                num_threads = str(input(f"{Fore.RED}[HuyKaiserDZ]   Threads (1000000): {Fore.RESET}"))
+                num_threads = str(input(f"{Fore.BLUE}[HuyKaiserDZ]   Threads (1000000): {Fore.RESET}"))
                 if num_threads == '':
                     #num_threads = int(80000)
                      num_threads = int(random.randint(200000, 300000))
