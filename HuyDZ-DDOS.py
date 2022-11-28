@@ -562,7 +562,7 @@ class MainLoop:
                                                          HUYKAISER PROCODER DDoS v2
                                                            
 ----------------------------------------------------------------------------------------- 
- Cảm ơn bạn đã ủng hộ DagTri nhiều nha <3 love u very much
+ Cảm ơn bạn đã ủng hộ HuyKaiser Dzai nhiều nha <3 love u very much
                                                                                                   
                                                                                                   
                                                                                              
@@ -591,10 +591,10 @@ class MainLoop:
             else:
 				#num_threads = sys.argv[2]
                 #num_threads = int(input("threads: "))
-                num_threads = str(input(f"{Fore.RED}[HuyKaiserDZ]   Threads (100000): {Fore.RESET}"))
+                num_threads = str(input(f"{Fore.RED}[HuyKaiserDZ]   Threads (1000000): {Fore.RESET}"))
                 if num_threads == '':
-                    #num_threads = int(8000)
-                     num_threads = int(random.randint(20000, 30000))
+                    #num_threads = int(80000)
+                     num_threads = int(random.randint(200000, 300000))
                 else:
                     num_threads = int(num_threads)
                 for i in range(num_threads):
