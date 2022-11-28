@@ -571,11 +571,12 @@ class MainLoop:
 """      
         getproxy()
         CRED2 = '\33[91m'
+        CBLUE = '\033[1;36m'
         print(Style.RESET_ALL)
         try:
 			#url = sys.argv[1]
             os.system('cls' if os.name == 'nt' else 'clear')
-            print(CRED2 + logo + CRED2)
+            print(CRED2 + logo + CBLUE)
             url = str(input(f"{Fore.RED}[HuyKaiserDZ]   Nhập Url/Target: {Fore.RESET}"))
         except:
             os.system('cls' if os.name == 'nt' else 'clear')
